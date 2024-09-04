@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/endless-gamma-434601-s8/consultasheets:v1', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/endless-gamma-434601-s8/consultasheets:v1']
+images:
+- 'gcr.io/endless-gamma-434601-s8/consultasheets:v1'
